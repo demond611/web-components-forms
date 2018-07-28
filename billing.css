@@ -1,0 +1,87 @@
+/* BILLING / SHIPPING STYLES */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+}
+
+.container {
+	background: #00004d;
+	border-radius: 6px;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	max-width: 80%;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.shipping-section {
+	border: 1.5px solid #ffffff;
+	border-radius: 6px;
+	padding: 10px;
+	order: 1;
+	width: 48%;
+}
+
+.shipping-section p, .billing-section p {
+	margin-bottom: 7px;
+	width: 48%;
+}
+
+.billing-section {
+	border: 1.5px solid #ffffff;
+	border-radius: 6px;
+	padding: 10px;
+	order: 2;
+	width: 48%;
+}
+
+.address-section + p {
+	width: 100%;
+}
+
+.match-information {
+	width: 100%;
+}
+
+.name-section, .country-section, .address-section {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.small-gutter {
+	margin-right: 2%;
+}
+
+.underline {
+	border-bottom: 0.75px solid #ffffff;
+}
+
+p > label {
+	font-size: 0.875em;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select {
+	padding: 10px 25px 10px 10px;
+	border: 1px solid #424242;
+	border-radius: 6px;
+	width: 100%;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+	background: #eaeaea;
+}
+
+
+/* PURCHASE STYLES */

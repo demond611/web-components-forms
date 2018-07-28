@@ -134,18 +134,18 @@ button {
 
 .panel__content p {
 	padding: 8px 20px 8px 0;
-    margin: 0;
+  margin: 0;
 }
 
 .panel__content ul {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
 }
 
 .panel__content li {
-    background: inherit;
-    color: inherit;
+  background: inherit;
+  color: inherit;
 }
 
 .panel__content li:last-of-type {
@@ -158,13 +158,13 @@ button {
 }
 
 .accordion input:checked ~ .panel__content {
-    max-height: 1000px;
-    opacity: 1;
-    visibility: visible;
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .accordion input:checked ~ label {
-    background: #558edd;
+  background: #558edd;
 }
 
 input + label {
@@ -177,9 +177,9 @@ li p:last-of-type {
 }
 
 .strong-text {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .last-item {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
