@@ -6,88 +6,148 @@
 	<title>Shipping/Billing Form</title>
 	<link rel="stylesheet" href="billing.css">
 </head>
+
 <body>
+	<section class="accordion">
+		<ul>
+    	<li>
+      	<input type="radio" name="panel" id="panel-1">
+        <label for="panel-1">Shipping/Billing Information</label>
+       	<div class="panel__content">
+            	<form action="" autocomplete="nope">
+              	<ul>
+              		<li>
+              			<section class="container">
+											<div class="row">
+												<section class="shipping-section small-gutter">
+													<h3><span class="underline">Shipping Information</span></h3>
+													<div class="name-section">
+														<p class="small-gutter">
+															<label for="first_name_field">First Name</label>
+															<input type="text" name="first_name_field" maxlength="15" placeholder="First Name" required>
+														</p>
+														<p>
+															<label for="last_name_field">Last Name</label>
+															<input type="text" name="last_name_field" maxlength="25" placeholder="Last Name" required>
+														</p>
+													</div>
+													<div class="country-section">
+														<p>
+															<label for="country_field">Country</label>
+															<select name="country_field">
+																<option value="USA">United States</option>
+																<option value="CAN">Canada</option>
+																<option value="JPN">Japan</option>
+																<option value="FRA">France</option>
+																<option value="MEX">Mexico</option>
+															</select>
+														</p>
+													</div>
+													<div class="address-section">
+														<p class="small-gutter">
+															<label for="address_field">Address</label>
+															<input type="text" name="address_field" maxlength="70" placeholder="Address" required>
+														</p>
+														<p>
+															<label for="city_field">City</label>
+															<input type="text" name="city_field" maxlength="40" placeholder="City" required>
+														</p>
+													</div>
+												</section>
 
-	<section class="container">
-		<form action="" autocomplete="nope">
-			<div class="row">
-				<section class="shipping-section small-gutter">
-					<h3><span class="underline">Shipping Information</span></h3>
-					<div class="name-section">
-						<p class="small-gutter">
-							<label for="first_name_field">First Name</label>
-							<input type="text" name="first_name_field" maxlength="15" placeholder="First Name" required>
-						</p>
-						<p>
-							<label for="last_name_field">Last Name</label>
-							<input type="text" name="last_name_field" maxlength="25" placeholder="Last Name" required>
-						</p>
-					</div>
-					<div class="country-section">
-						<p>
-							<label for="country_field">Country</label>
-							<select name="country_field">
-								<option value="USA">United States</option>
-								<option value="CAN">Canada</option>
-								<option value="JPN">Japan</option>
-								<option value="FRA">France</option>
-								<option value="MEX">Mexico</option>
-							</select>
-						</p>
-					</div>
-					<div class="address-section">
-						<p class="small-gutter">
-							<label for="address_field">Address</label>
-							<input type="text" name="address_field" maxlength="70" placeholder="Address" required>
-						</p>
-						<p>
-							<label for="city_field">City</label>
-							<input type="text" name="city_field" maxlength="40" placeholder="City" required>
-						</p>
-					</div>
-				</section>
-
-				<section class="billing-section">
-					<h3><span class="underline">Billing Information</span></h3>
-					<div class="name-section">
-						<p class="small-gutter">
-							<label for="billing_first_name_field">First Name</label>
-							<input type="text" name="billing_first_name_field" maxlength="15" placeholder="First Name" required>
-						</p>
-						<p>
-							<label for="billing_last_name_field">Last Name</label>
-							<input type="text" name="billing_last_name_field" maxlength="25" placeholder="Last Name" required>
-						</p>
-					</div>
-					<div class="country-section">
-						<p>
-							<label for="billing_country_field">Country</label>
-							<select name="billing_country_field">
-								<option value="USA">United States</option>
-								<option value="CAN">Canada</option>
-								<option value="JPN">Japan</option>
-								<option value="FRA">France</option>
-								<option value="MEX">Mexico</option>
-							</select>
-						</p>
-					</div>
-					<div class="address-section">
-						<p class="small-gutter">
-							<label for="billing_address_field">Address</label>
-							<input type="text" name="billing_address_field" maxlength="70" placeholder="Address" required>
-						</p>
-						<p>
-							<label for="billing_city_field">City</label>
-							<input type="text" name="billing_city_field" maxlength="40" placeholder="City" required>
-						</p>
-					</div>
-					<p>
-						<input type="checkbox" name="matching_billing_info" value="Y"><span>Billing Address should match Shipping Information</span>
-					</p>
-				</section>
-			</div>
-		</form>
+												<section class="billing-section">
+													<h3><span class="underline">Billing Information</span></h3>
+													<div class="name-section">
+														<p class="small-gutter">
+															<label for="billing_first_name_field">First Name</label>
+															<input type="text" name="billing_first_name_field" maxlength="15" placeholder="First Name" required>
+														</p>
+														<p>
+															<label for="billing_last_name_field">Last Name</label>
+															<input type="text" name="billing_last_name_field" maxlength="25" placeholder="Last Name" required>
+														</p>
+													</div>
+													<div class="country-section">
+														<p>
+															<label for="billing_country_field">Country</label>
+															<select name="billing_country_field">
+																<option value="USA">United States</option>
+																<option value="CAN">Canada</option>
+																<option value="JPN">Japan</option>
+																<option value="FRA">France</option>
+																<option value="MEX">Mexico</option>
+															</select>
+														</p>
+													</div>
+													<div class="address-section">
+														<p class="small-gutter">
+															<label for="billing_address_field">Address</label>
+															<input type="text" name="billing_address_field" maxlength="70" placeholder="Address" required>
+														</p>
+														<p>
+															<label for="billing_city_field">City</label>
+															<input type="text" name="billing_city_field" maxlength="40" placeholder="City" required>
+														</p>
+														<p>
+															<label for="matching_billing_info">
+																<input type="checkbox" name="matching_billing_info" value="Y"><span>Billing Address should match Shipping Information</span>
+															</label>
+														</p>
+													</div>
+												</section>
+											</div>
+										</section>
+              		</li>
+								</ul>
+							</form>
+        </div>
+      </li>
+      <li>
+       	<input type="radio" name="panel" id="panel-2">
+       	<label for="panel-2">Payment Information</label>
+        <div class="panel__content">
+        	<ul>
+          	<li>
+            	<section class="payment-container">
+								<form action="" autocomplete="nope">
+									<div class="row">
+										<section class="payment-section">
+											<h3><span class="underline">Payment Information</span></h3>
+											<div class="payment-section_name">
+												<p>
+													<label for="card_holder_name_field">Name</label>
+													<input type="text" name="card_holder_name_field" maxlength="60" required>
+												</p>
+											</div>
+											<div class="payment-section-card-fields">
+												<p class="small-gutter">
+													<label for="">Card Number</label>
+													<input type="text" name="card_number_field" maxlength="19" required>
+												</p>
+												<p>
+													<label for="csv_number_field">CSV</label>
+													<input type="text" name="csv_number_field" maxlength="4" required>
+												</p>
+											</div>
+											<div class="payment-section-date-fields">
+												<p class="small-gutter">
+													<label for="">Expiration Month</label>
+													<input type="text">
+												</p>
+												<p>
+													<label for="">Expiration Year</label>
+													<input type="text">
+												</p>
+											</div>
+										</section>
+									</div>
+								</form>
+							</section>
+           	</li>
+					</ul>
+        </div>
+      </li>
+    </ul>
 	</section>
-	
 </body>
 </html>

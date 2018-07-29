@@ -16,7 +16,6 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin: 0 auto;
-	max-width: 80%;
 	width: 100%;
 }
 
@@ -34,9 +33,14 @@ body {
 	width: 48%;
 }
 
-.shipping-section p, .billing-section p {
+.shipping-section p, .billing-section p, .payment-section-card-fields p, .payment-section-date-fields p, .payment-section_name p {
 	margin-bottom: 7px;
 	width: 48%;
+}
+
+.shipping-section p label, .billing-section p label, .payment-section_fields p label {
+	text-transform: none;
+	padding: 0;
 }
 
 .billing-section {
@@ -47,15 +51,11 @@ body {
 	width: 48%;
 }
 
-.address-section + p {
+.billing-section .address-section p:last-child {
 	width: 100%;
 }
 
-.match-information {
-	width: 100%;
-}
-
-.name-section, .country-section, .address-section {
+.name-section, .country-section, .address-section, .payment-section_name, .payment-section-card-fields, .payment-section-date-fields {
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -85,3 +85,116 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 
 /* PURCHASE STYLES */
+.payment-section {
+	border: 1.5px solid #ffffff;
+	border-radius: 6px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 100%;
+}
+
+.payment-container {
+	background: #00004d;
+	border-radius: 6px;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	width: 70%;
+}
+
+
+/* ACCORDION STYLES */
+.accordion {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.accordion ul {
+	/*padding-left: 0;*/
+	list-style: none;
+}
+
+.accordion li {
+	background: #102C52;
+	color: #ffffff;
+	margin-top: 1.5px;
+}
+
+.accordion li:first-child{
+	margin-top: 0;
+}
+
+.accordion label {
+	padding: 8px 5px 8px;
+    text-transform: uppercase;
+}
+
+.accordion input[type='radio']{
+	display: none;
+}
+
+.panel__content {
+	background: #eaeaea;
+	color: #424242;
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.panel__content p {
+	padding: 8px 20px 8px 0;
+  margin: 0;
+}
+
+.panel__content ul {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.panel__content li {
+  background: inherit;
+  color: inherit;
+}
+
+/*.panel__content li:last-of-type {
+	margin-top: 20px;
+}*/
+
+.panel__content ul > h2 {
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+.accordion input:checked ~ .panel__content {
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion input:checked ~ label {
+  background: #558edd;
+}
+
+input + label {
+	cursor: pointer;
+	display: block;
+}
+
+li p:last-of-type {
+	margin-bottom: 0;
+}
+
+.strong-text {
+	font-weight: bold;
+}
+
+.last-item {
+  padding-bottom: 20px;
+}
