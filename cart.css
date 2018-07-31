@@ -70,6 +70,7 @@ body {
 .in-cart-items {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .in-cart-name {
@@ -87,20 +88,64 @@ body {
 	width: 50%;
 }
 
+.checkout-options {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.checkout-options div {
+	margin-top: 7px;
+}
+
+.remove-cart {
+	-webkit-order: 1;
+	-moz-order: 1;
+	-ms-order: 1;
+	-o-order: 1;
+	order: 1;
+}
+
+.add-cart {
+	-webkit-order: 2;
+	-moz-order: 2;
+	-ms-order: 2;
+	-o-order: 2;
+	order: 2;
+}
+
 button {
 	cursor: pointer;
 	padding: 3px 7px;
 	color: #ffffff;
 }
 
-.add-cart button {
+.add-cart button, .checkout button {
 	background: #2eb82e;
 	border: none;
 	border-radius: 4px;
 }
 
-.remove-cart button {
+.remove-cart button, .keep-shopping button {
 	background: red;
 	border: none;
 	border-radius: 4px;
+}
+
+.checkout button, .keep-shopping button {
+	width: 25%;
+}
+
+input[type="text"] {
+	padding: 10px 25px 10px 10px;
+	border: 1px solid #424242;
+	border-radius: 6px;
+	width: 50%;
+}
+
+input[type="number"]{
+	border: 1.5px solid #424242;
+	border-radius: 4px;
+	padding: 0 5px;
+	width: 25%;
 }

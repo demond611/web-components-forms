@@ -29,8 +29,12 @@
 								<li class="item-price">
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
-										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="add-cart">
+											<button>Add to Cart</button>
+										</div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -53,7 +57,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -76,7 +82,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -99,7 +107,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -122,7 +132,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -145,7 +157,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -168,7 +182,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -191,7 +207,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -214,7 +232,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -237,7 +257,9 @@
 									<div class="display-rate">$0.00</div>
 									<div class="cart-button">
 										<div class="add-cart"><button>Add to Cart</button></div>
-										<div class="remove-cart"><button>Remove from Cart</button></div>
+										<div class="remove-cart">
+											<label for="item-qty">Qty: <input name="item-qty" type="number" min="0" value="1" maxlength="4"></label>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -252,10 +274,29 @@
 				<div class="padding-10">
 					<div class="in-cart-items">
 						<div class="in-cart-name">item in cart name</div>
+						<div class="remove-cart">
+							<button> Remove from Cart</button>
+						</div>
+						<div class="in-cart-qty">Qty</div>
+						<div class="in-cart-rate">$0.00</div>
+					</div>
+					<div class="in-cart-items">
+						<div class="in-cart-name">item in cart name</div>
+						<div class="remove-cart">
+							<button> Remove from Cart</button>
+						</div>
 						<div class="in-cart-qty">Qty</div>
 						<div class="in-cart-rate">$0.00</div>
 					</div>
 					<hr>
+					<div class="promocode">
+						<label for="promo_field">Promo Code</label>
+						<input type="text" name="promo_field" maxlength="10" placeholder="Enter Promo Code">
+					</div>
+					<div class="checkout-options">
+						<div class="keep-shopping"><button>Keep Shopping</button></div>
+						<div class="checkout"><button>Checkout</button></div>
+					</div>
 					<h2 class="in-cart-total-rate">Total: $0.00</h2>
 				</div>
 			</div>
