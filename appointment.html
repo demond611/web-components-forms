@@ -3,8 +3,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Appointment Form</title>
+	<link rel="stylesheet" href="appointment.css">
 </head>
 <body>
+
+	<section class="container">
+		<form action="" autocomplete="nope">
+    	<ul>
+    		<li>
+    			<section class="container">
+						<div class="row">
+							<section class="schedule-section">
+								<h3><span class="underline">Scheduling Form</span></h3>
+								<div class="date-section">
+									<p class="">
+										<label for="date_field">Date</label>
+										<input type="date" name="date_field" required>
+									</p>
+									<p>
+										<label for="time_field">Time</label>
+										<input type="time" name="time_field" required>
+									</p>
+								</div>
+								<div class="contact-section">
+									<p>
+										<label for="contact_number_field">Contact Number</label>
+										<input type="text" name="contact_number_field">
+									</p>
+									<p>
+										<label for="internet_address_field">Email Address</label>
+										<input type="email" name="internet_address_field">
+									</p>
+								</div>
+								<div class="message-section">
+									<p>
+										<label for="message_field">Message</label>
+										<textarea name="message_field" rows="5" placeholder="Enter Message"></textarea>
+									</p>
+								</div>
+							</section>
+						</div>
+					</section>
+    		</li>
+			</ul>
+		</form>
+	</section>
 	
 </body>
 </html>

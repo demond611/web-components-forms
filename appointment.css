@@ -1,1 +1,69 @@
 /* APPOINTMENT STYLES */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+}
+
+.container {
+	background: #00004d;
+	border-radius: 6px;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.schedule-section {
+	border: 1.5px solid #ffffff;
+	border-radius: 6px;
+	padding: 10px;
+	width: 50%;
+}
+
+.date-section, .contact-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.date-section p, .contact-section p {
+	width: 48%;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.underline {
+	border-bottom: 0.75px solid #ffffff;
+}
+
+p > label {
+	font-size: 0.875em;
+}
+
+input[type="text"], input[type="time"], input[type="email"], input[type="date"],
+input[type="number"], textarea, select {
+	padding: 10px 25px 10px 10px;
+	border: 1px solid #424242;
+	border-radius: 6px;
+	width: 100%;
+}
+
+input[type="text"]:focus, input[type="time"]:focus, input[type="email"]:focus,
+input[type="number"]:focus, input[type="date"]:focus {
+	background: #eaeaea;
+}
